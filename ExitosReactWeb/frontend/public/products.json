@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "src": "valvula-de-escape-exito-repuestos.png",
+    "alt": "valvula de escape",
+    "quant": 0,
+    "desc": "test3",
+    "price": "200000"
+  },
+  {
+    "id": 2,
+    "src": "triceta-ford-exito-repuestos.png",
+    "alt": "triceta renault",
+    "quant": 0,
+    "desc": "para renualt",
+    "price": "50000"
+  },
+  {
+    "id": 3,
+    "src": "tubo-refrigerador-megane-exito-repuestos.png",
+    "alt": "tubo refrigerador",
+    "quant": 0,
+    "desc": "para megane",
+    "price": "25000"
+  },
+  {
+    "id": 4,
+    "src": "varilla-medidor-de-aceite-renault-clio2-exito.png",
+    "alt": "varilla medidora de aceite",
+    "quant": 0,
+    "desc": "",
+    "price": "30000"
+  },
+  {
+    "id": 5,
+    "src": "valvula-de-admsion-renault-exito.png",
+    "alt": "valvula ",
+    "quant": 0,
+    "desc": "tets6",
+    "price": "1400"
+  },
+  {
+    "id": 6,
+    "src": "crapodina-removebg-preview.png",
+    "alt": "crapodina de embrague",
+    "quant": 0,
+    "desc": "para renault",
+    "price": "120000"
+  },
+  {
+    "id": 7,
+    "src": "triceta-ford-exito-repuestos-removebg-preview.png",
+    "alt": "Triceta 21-30",
+    "quant": 0,
+    "desc": "para Ford",
+    "price": "120000"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "src": "../../images/repuestos/tensor-trasero-de-motor-renault-exito-repuestos.png",
+    "alt": "Tensor trasero de motor",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 2,
+    "src": "../../images/repuestos/tensor-auxiliar-dentada-clio-exito-repuestos.png",
+    "alt": "Tensor auxiliar dentada Clio",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 3,
+    "src": "../../images/repuestos/tensor-correa-twingo-exito-repuestos.png",
+    "alt": "Tensor correa Twingo",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 4,
+    "src": "../../images/repuestos/termostato-exito-repuestos.png",
+    "alt": "Termostato",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 5,
+    "src": "../../images/repuestos/triceta-ford-exito-repuestos.png",
+    "alt": "Triceta Ford",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 6,
+    "src": "../../images/repuestos/triceta-renault-exito-repuestos.png",
+    "alt": "Triceta Renault",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 7,
+    "src": "../../images/repuestos/tubo-refrigerador-megane-exito-repuestos.png",
+    "alt": "Tubo refrigerador Megane",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 8,
+    "src": "../../images/repuestos/valvula-de-admsion-renault-exito.png",
+    "alt": "Válvula de admisión Renault",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 9,
+    "src": "../../images/repuestos/valvula-de-escape-exito-repuestos.png",
+    "alt": "Válvula de escape",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 10,
+    "src": "../../images/repuestos/valvula-de-escape-renault.png",
+    "alt": "Válvula de escape Renault",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 11,
+    "src": "../../images/repuestos/varilla-medidor-de-aceite-exito-repuestos.png",
+    "alt": "Varilla medidor de aceite",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  },
+  {
+    "id": 12,
+    "src": "../../images/repuestos/varilla-medidor-de-aceite-renault-clio2-exito.png",
+    "alt": "Varilla medidor de aceite Renault Clio2",
+    "quant": 0,
+    "desc": "",  
+    "price": null  
+  }
+]
