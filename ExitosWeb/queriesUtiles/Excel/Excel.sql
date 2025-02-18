@@ -1,0 +1,16 @@
+--Insertar + ilustraciones + Formas. Para hacer el dashborard // Insertar + Texto + Cuadro de Texto. Para importar datos dinamicos 
+--Vista + Quitar las lineas de cuadricula. Para quitar las lineas de cuadricula 
+--Para importar los datos dinamicos de una tabla darle = a un dato de una tabla dinamica y pegarlo a lado 
+--Formula para hallar el porcentaje de devoluciones es =devoluciones_totales/ventas_totales. Y después pasar a porcentaje 
+--Para poder importar los datos a un cuadro de texto o a una ilustracion se debe de escribir desde la barra de textos 
+ --Insertar + ilustraciones + Iconos. Para insertar viñetas 
+ --Para hallar los costos usaremos =Revenue * GrossMargin en porcentaje - El revenue de vuelta todo encerrado en parentesis. (Revenue * GrossMargin - Revenue)
+ --La formula de ingresos netos o ganancia =(revenue-costos)
+--Para hallar los costos como porcentaje del total usaremos =(suma_de_costos/suma_de_revenue)
+--Para hallar el porcentaje de las ganancias =(suma_de_ganancias/suma_de_revenue)
+--Para quitar subtotales en una tabla dinamica dejo el cursor en la tabla, me voy a diseño y le doy a 'quitar subtotales'
+--Para colocar un titulo en un gráfico, tocar el signo + del gráfico y darle a 'titulo en general'
+--Para cambiar el color de un grafico hacer clic derecho en el y seleccionar 'formato de serie de Gráfico', luego seleccionar la cubeta y cambiar el color  
+ --Se puede cambiar el color de una tabla dinamica de manera convencional o en diseño 
+ --Para insertar una segmentacion de datos nos vamos a análisis e insertamos segmentacion de datos 
+ --Para colocar un texto en formato csv a excel nos vamos a datos y seleccionamos Desde el texto/CSV e importamos el archivo

@@ -1,0 +1,3 @@
+--Para marcar una formula que se está utilizando como referencia pichar f4 sobre la formula
+-- +buscarv(valor_buscado,matriz_de_columnas,indicador_de_columnas,rango) 
+--Para hallar el porcentaje del total se selecciona el valor que queremos calcular /(dividido) el total 

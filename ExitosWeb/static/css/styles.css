@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.nav-wrapper img {
+    width: 30px;
+}
+nav p {
+    color: white;
+    font-size: 15px;
+}
+.nav-wrapper {
+    background-image: url("/static/images/back5.png");
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+.hambur-wrapper img {
+    margin: 10px;
+    width: 70px;
+}
+.list-wrapper {
+    display: flex;
+   flex-grow: 1;
+   justify-content: space-around;
+}
+.nav-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-wha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Interactive design for the menu button */
+.toggle-menu {
+    background-color: rgba(175, 159, 159, 1);
+    padding: 10px;
+    height: 120px;
+    display: none;
+    position: fixed;
+    margin-top: 60px;
+    width: 100%;
+}
+.toggle-menu a {
+    color: white;
+    text-decoration: none;
+}
+.toggle-menu a:hover {
+    text-decoration: underline;
+    color: rgb(153, 153, 40);
+}
+.toggle-menu ul {
+    list-style: none;
+}
+.header-wrapper {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url(/static/images/background.jpg);
+    text-align: center;
+    height: auto;
+}
+.header-text1 h2{
+    font-size: 25px;
+}
+.header-text2 p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+.content-logos img{
+    width: 150px;
+}
+.content-logos img:hover{
+    width: 200px;
+}
+.content-logos img:nth-child(2) {
+    width: 70px;
+}
+.content-logos img:nth-child(2):hover {
+    width: 100px;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.content-text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+}
+.content-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.showcase-images1 img {
+    max-width: 100%;
+    height: auto;
+}
+/* Hay que hacer un mediaquery aqui para que el flex-direction
+sea column para los celulares, añadirles sus aling correspondientes
+en su axis cambiado, y tambien añadir el px para el navbar para
+dispositivos > celulares */
+.showcase-images1 {
+    display: flex;
+    margin-top: 95px;
+    justify-content: space-between;
+}
+.ford-img img {
+    width: 400px;
+}
+.showcase-text1 {
+    display: flex;
+    flex-direction: column;
+    color: rgb(224, 22, 22);
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.showcase-images2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showcase-images2 img{
+    width: 100px;
+}
+/* tambien necesitamos media query para esto */
+.stats-grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.button-container{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    text-align: center;
+}
+.button-container button{
+    background-color: rgb(212, 14, 14);
+    border-color: rgb(212, 14, 14);
+    color: white;
+    width: 190px;
+    margin-top: 35px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 25px 25px 25px;
+}
+.button-container button:hover {
+    background-color: red;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    background-image: url("/static/images/redB1.png");
+    color: white;
+    align-items: center;
+}
+.info-medios {
+    text-align: center;
+    justify-content: center;
+}
+.horarios {
+    text-align: center;
+    justify-content: center;
+}
+#hOne {
+    text-align: center;
+    margin-top: 30px;
+}
+.como-llegar-wrapper {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.como-llegar-wrapper img{
+    max-width: 600px;
+}
+.como-llegar-wrapper button{
+    background-color: rgb(212, 14, 14);
+    border-color: rgb(212, 14, 14);
+    color: white;
+    width: 190px;
+    margin-top: 35px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 25px 25px 25px;
+}
+.como-llegar-wrapper button:hover {
+    background-color: red;
+}
+.contact-wrapper img {
+    width: 50px;
+}
+.contact-wrapper img:nth-child(1) {
+    width: 33px;
+}
+.contact-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 40px;
+}
+.contact h1 {
+    text-align: center;
+}
+.contact-text1 {
+    background-color: rgb(179, 47, 47);;
+    color: white;
+    font-weight: bolder;
+    padding: 25px;
+    border-radius: 22px;
+}
+.contact-text2 {
+    background-color: rgb(179, 47, 47);;
+    color: white;
+    font-weight: bolder;
+    padding: 25px;
+    border-radius: 22px;
+    max-width: 350px;
+}
+.contact-text2 form #Enviar {
+    background-color: rgb(212, 14, 14);
+    border-color: rgb(212, 14, 14);
+    color: white;
+    width: 190px;
+    margin-top: 35px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 25px 25px 25px;
+}
+.contact-text2 form #Enviar:hover {
+    background-color: red;
+}
+.store-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.store-inner img {
+    width: 350px;
+    border-radius: 12px;
+    margin: 10px;
+}
+h1 {
+    text-align: center;
+}
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos dentro de la sección */
+    text-align: center; /* Alinea el texto al centro */
+    background-image: url(/../images/natureBg.jpg);
+}
+
+.store button {
+    /* Tu estilo actual del botón */
+    background-color: rgb(212, 14, 14);
+    border-color: rgb(212, 14, 14);
+    color: white;
+    width: 190px;
+    margin-top: 35px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.store button:hover{
+    background-color: red;
+}
+.header-store {
+    margin-top: 60px;
+}
+@media (max-width: 676px){
+    nav p {
+        font-size: 8px;
+    }
+    .showcase-images1{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .stats-grid-container{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .como-llegar-wrapper img{
+        max-width: 400px;
+    }
+    .contact-wrapper {
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+    .contact-text2 {
+        background-color: white;
+        color: black;
+        font-weight: bolder;
+        padding: 25px;
+        border-radius: 22px;
+        max-width: 100%;
+    }
+    .contact-text1 {
+        max-width: 300px;
+    }
+    .contact-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
