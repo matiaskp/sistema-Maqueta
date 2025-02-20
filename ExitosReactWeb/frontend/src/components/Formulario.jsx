@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
+import axios from 'axios';
+import { context } from '../Context/Context'; // Ajusta el path si es necesario
 
 function Formulario(props) {
+  const { cart, setCart } = useContext(context);
   // Estado para manejar los valores del formulario
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
     email: '',
     telefono: '',
-    mensaje: ''
+    mensaje: '',
   });
 
   // Estado para manejar los errores de validación
   const [errors, setErrors] = useState({
     nombre: '',
     apellido: '',
-    telefono: ''
+    telefono: '',
   });
 
   const navigate = useNavigate(); // Inicializa el hook de navegación
@@ -25,7 +28,7 @@ function Formulario(props) {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -52,12 +55,24 @@ function Formulario(props) {
     if (formErrors.nombre || formErrors.apellido || formErrors.telefono) {
       setErrors(formErrors);
     } else {
-      // Aquí podrías procesar el formulario, por ejemplo, enviarlo a un servidor
-      console.log('Formulario enviado con éxito:', formData);
-      alert('Formulario enviado con éxito');
-
-      // Redirige a la ruta /success
-      navigate('/success');
+      // Envía datos al servidor
+      axios
+        .post('http://localhost:5000/form', {
+          name: formData.nombre,
+          lastName: formData.apellido,
+          phone: formData.telefono,
+          mail: formData.email,
+          cart:cart
+        })
+        .then((response) => {
+          console.log(response);
+          alert('Formulario enviado con éxito');
+          navigate('/success');
+        })
+        .catch((err) => {
+          console.error(err);
+          alert('Error al enviar el formulario');
+        });
 
       // Limpia el formulario y los errores
       setFormData({ nombre: '', apellido: '', email: '', telefono: '', mensaje: '' });
@@ -66,7 +81,7 @@ function Formulario(props) {
   };
 
   return (
-    <div style={props.state ? {} : {display:"none"}} className='formContainer'>
+    <div style={props.state ? {} : { display: 'none' }} className="formContainer">
       <h2>Formulario de Contacto</h2>
       <form onSubmit={handleSubmit}>
         {/* Nombre */}
@@ -135,10 +150,13 @@ function Formulario(props) {
         </div>
 
         {/* Botón de envío */}
-        <button className='formEnviar' type="submit">Enviar</button>
+        <button className="formEnviar" type="submit">
+          Enviar
+        </button>
       </form>
     </div>
   );
 }
 
 export default Formulario;
+
