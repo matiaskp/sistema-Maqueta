@@ -8,9 +8,9 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 # Ruta para obtener datos de form.db
 @app.route("/customerOrders", methods=["GET"])
 def get_customerOrders():
-    conn = sqlite3.connect('/home/mati/Desktop/sistema-Maqueta/ExitosReactWeb/backend/instance/form.db')
+    conn = sqlite3.connect(r'C:\sistema-Maqueta/ExitosReactWeb\backend\instance\form.db')
     cursor = conn.cursor()
-    conn2 = sqlite3.connect("/home/mati/Desktop/sistema-Maqueta/ExitosReactWeb/backend/instance/form.db")
+    conn2 = sqlite3.connect(r"C:\sistema-Maqueta\ExitosReactWeb\backend\instance\form.db")
     cursor2 = conn2.cursor()
     try:
         # Realizamos una consulta sobre la base de datos form.db
