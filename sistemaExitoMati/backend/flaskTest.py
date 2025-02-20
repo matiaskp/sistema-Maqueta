@@ -10,8 +10,8 @@ app.config["SECRET_KEY"] = "some environment variable"
 db = SQLAlchemy(app)
 CORS(app)
 
-UPLOAD_FOLDER = 'C:/sistemaMati/ExitosReactWeb/frontend/public/products'  # La ruta de la carpeta donde se guardarán las imágenes
-PRODUCTS_FILE = 'C:/sistemaMati/ExitosReactWeb/frontend/public/products.json'  # Ruta del archivo JSON de productos
+UPLOAD_FOLDER = 'C:/sistema-Maqueta/ExitosReactWeb/frontend/public/products'  # La ruta de la carpeta donde se guardarán las imágenes
+PRODUCTS_FILE = 'C:/sistema-Maqueta/ExitosReactWeb/frontend/public/products.json'  # Ruta del archivo JSON de productos
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Asegúrate de que la carpeta de destino exista
