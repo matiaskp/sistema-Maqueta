@@ -13,7 +13,7 @@ flask_process = subprocess.Popen(['python', 'flaskTest.py'], cwd=r'C:\sistema-Ma
 flask_process2 = subprocess.Popen(['python', 'customerOrders.py'], cwd=r'C:\sistema-Maqueta\sistemaExitoMati\backend')
 
 # Lanzar el servidor de Dash (si es separado de Flask)
-dash_process = subprocess.Popen(['python', 'reportes.py'], cwd='C:\\sistema-Maqueta\\ExitosWeb')
+dash_process = subprocess.Popen(['python', 'reportes.py'], cwd=r'C:\sistema-Maqueta\sistemaExitoMati\backend')
 
 # Esperar a que el servidor React esté listo para abrir el navegador
 time.sleep(3)  # Espera un poco para que el servidor React inicie
