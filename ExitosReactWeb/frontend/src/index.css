@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   padding: 0;
@@ -591,7 +594,13 @@ h1 {
   font-size: 40px;  /* Ajusta el tamaño según lo que necesites */
   cursor: pointer; /* Para que el cursor cambie a mano cuando pase por encima */
 }
-
+.ContactUsContainer div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
 .testimonialArrow:hover {
   color: #007bff;  /* Cambia el color al pasar el mouse (opcional) */
 }

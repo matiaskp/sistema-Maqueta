@@ -7,6 +7,7 @@ import ToDoList from "./components/toDoList/ToDoList.jsx"
 import ExpenseMain from './components/ExpenseTracker/ExpenseMain.jsx'
 import DashComponent from './components/MainApp/DashComponent.jsx'
 import ProductUpload from "./components/ProductUpload/ProductUpload.jsx"
+import CustomerOrders from "./components/CustomersOrders/CustomersOrders.jsx"
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path:"/añadir",
     element:<ProductUpload/>
+  },
+  {
+    path:"/pedidos",
+    element:<CustomerOrders/>
   },
 ])
 

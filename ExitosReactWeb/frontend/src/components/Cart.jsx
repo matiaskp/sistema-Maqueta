@@ -2,6 +2,7 @@ import React, { useContext,useState } from 'react';
 import { context } from "../Context/Context";
 import Navbar from "../components/Navbar";
 import Formulario from './Formulario';
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, setCart } = useContext(context);
@@ -37,7 +38,22 @@ const Cart = () => {
 
   return (
     <div>
-      <Navbar />
+      <header>
+        <nav className="navTienda">
+          <div className="nav-gmail">
+            <Link to="/" className="linkToTienda">
+              <img src="/images/home.png" alt="Home icon" />
+              <p>volver al inicio</p>
+            </Link>
+          </div>
+          <div className="nav-gmail">
+            <Link to="/tienda" className="linkToTienda">
+              <img src="/images/tiendaEnLínea.png" alt="Home icon" />
+              <p>ver Tienda en línea</p>
+            </Link>
+          </div>
+        </nav>
+      </header>
       <div className='cartContainer'>
         <h1 style={state ? {display:"none"} : {}}>Lista de pedidos:</h1>
         {cart.length === 0 ? (

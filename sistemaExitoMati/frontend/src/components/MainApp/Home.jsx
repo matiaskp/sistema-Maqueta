@@ -11,8 +11,8 @@ const Home = () => {
       </div>
       <div className="boxContainerTwo">
       <div className="box boxTwo"><Link to="/añadir">Añadir producto a tienda</Link></div>
-      <div className="box boxTwo">Proyecto 5...</div>
-      <div className="box boxTwo">Proyecto 6...</div>
+      <div className="box boxTwo"><Link to="/pedidos">Pedidos de clientes</Link></div>
+      <div className="box boxTwo">Visitar tienda en línea</div>
       </div>
       <div className="boxContainerThree">
       <div className="box boxTwo">Proyecto 7...</div>

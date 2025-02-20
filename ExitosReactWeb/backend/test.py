@@ -20,6 +20,7 @@ class CartItem(db.Model):
     form_id = db.Column(db.Integer, db.ForeignKey('form.id'), nullable=False)  # Relación con Form
     product_id = db.Column(db.Integer, nullable=False)
     quantity = db.Column(db.Integer, nullable=False)
+    alt = db.Column(db.String(500),nullable=False)
     price = db.Column(db.String(1024), nullable=False)
 
 @app.route("/form", methods=["POST"])
@@ -42,6 +43,7 @@ def home():
                 cart_item = CartItem(
                     form_id=new_user.id,  # Usamos new_user.id después de db.session.flush()
                     product_id=item["id"],
+                    alt=item["alt"],
                     quantity=item["quant"],
                     price=item["price"],
                 )

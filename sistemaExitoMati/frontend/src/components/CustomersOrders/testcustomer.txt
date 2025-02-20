@@ -1,0 +1,31 @@
+  <div>
+      <Navbar />
+      <div className="customerContainer">
+      <section className="customerInfoContainer">
+        <h2>Información del Cliente</h2>
+        {customerInfo.map((info, index) => (
+          <div key={index}>
+            <p>pedido nro {index === 0 ? 1 : index}</p>
+            <p>Nombre: {info.name} {info.lastName}</p>
+            <p>Email: {info.mail}</p>
+            <p>Teléfono: {info.phone}</p>
+          </div>
+        ))}
+      </section>
+
+      <section className="customerOrdersContainer">
+        <h2>Pedidos del Cliente</h2>
+        {orders.length > 0 ? (
+          orders.map((order) => (
+            <div key={order.id}>
+              <p>Producto {order.id}: {order.producto}</p>
+              <p>Precio: {order.precio}</p>
+              <p>Cantidad: {order.cantidad}</p>
+            </div>
+          ))
+        ) : (
+          <p>No se encontraron pedidos</p>
+        )}
+      </section>
+      </div>
+      

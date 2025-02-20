@@ -138,17 +138,6 @@ function Formulario(props) {
           {errors.telefono && <p style={{ color: 'red' }}>{errors.telefono}</p>}
         </div>
 
-        {/* Mensaje adicional (opcional) */}
-        <div>
-          <label htmlFor="mensaje">Mensaje Adicional (opcional)</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            value={formData.mensaje}
-            onChange={handleChange}
-          ></textarea>
-        </div>
-
         {/* Botón de envío */}
         <button className="formEnviar" type="submit">
           Enviar

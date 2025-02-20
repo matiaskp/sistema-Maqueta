@@ -8,6 +8,7 @@ import Context from './Context/Context.jsx'
 import Cart from "./components/Cart.jsx"
 import Success from './components/Success.jsx'
 import NewNav from './components/NewNav.jsx'
+import ContactUs from './components/ContactUs.jsx'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,9 @@ const router = createBrowserRouter([
   {
     path: "/newNav",
     element: <NewNav/>
+  },
+  {path:"/contactUs",
+    element: <ContactUs/>
   }
 ])
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import StoreMain from './StoreMain';
+import ContactUs from './ContactUs';
 
 const MainCaroussel = () => {
   return (
@@ -29,7 +30,7 @@ const MainCaroussel = () => {
       <section className="content">
         <div className="content-wrapper">
           <div className="content-text1">
-            <p>Somos un nombre de confianza en ventas y servicios de repuestos de automóviles</p>
+            <p id='#QuienesSomosA'>Somos un nombre de confianza en ventas y servicios de repuestos de automóviles</p>
             <h2>POR QUÉ ELEGIRNOS</h2>
             <p>Exito repuestos y accesorios tiene todo para su automóvil con los mejores precios del mercado. Contamos con toda la linea general argentina de motores:</p>
           </div>
@@ -131,16 +132,7 @@ const MainCaroussel = () => {
           </div>
         </div>
       </div>
-      <section className="como-llegar" id="ComoLlegarA">
-        <div className="como-llegar-wrapper">
-          <h1>Como llegar</h1>
-          <p>Nos encontramos en Avda. Eusebio Ayala 2119 c/ Bartolomé de las casas</p>
-          <img src="../../images/location.png" alt="Location" />
-          <a target="_blank" href="https://www.google.com/maps/dir/-25.3231104,-57.6126976/exito+repuestos/@-25.3140461,-57.6172419,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x945da8638d3c7ed9:0xd991354db91a0ce9!2m2!1d-57.6036485!2d-25.3060052?entry=ttu">
-            <button className="como-llegar-button1">Abrir en Maps</button>
-          </a>
-        </div>
-      </section>
+      <ContactUs id="#ContactanosA"/>
       <section className="contact" id="ContactanosA">
         <h1>Contactanos</h1>
         <div className="contact-wrapper">

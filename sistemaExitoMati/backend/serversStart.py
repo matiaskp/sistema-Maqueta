@@ -9,6 +9,8 @@ react_process = subprocess.Popen([r'C:\Program Files\nodejs\npm.cmd', 'run', 'de
 
 # Lanzar el servidor de Flask
 flask_process = subprocess.Popen(['python', 'flaskTest.py'], cwd=r'C:\sistemaMati\sistemaExitoMati\backend')
+# Lanzar conexion a customerOrders db de ExitosReactWeb/backend
+flask_process = subprocess.Popen(['python', 'customerOrders.py'], cwd=r'C:\sistemaMati\sistemaExitoMati\backend')
 
 # Lanzar el servidor de Dash (si es separado de Flask)
 dash_process = subprocess.Popen(['python', 'reportes.py'], cwd='C:\\sistemaMati\\ExitosWeb')

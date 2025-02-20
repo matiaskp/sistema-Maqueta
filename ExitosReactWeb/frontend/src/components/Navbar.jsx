@@ -48,10 +48,7 @@ const Navbar = () => {
       </nav>
       {hamburBtn ? <div className="navList">
         <ul>
-          <li>Quiénes Somos</li>
-          <li>Como llegar</li>
-          <li>Contactanos</li>
-          <li><Link to="/tienda">visitar tienda en línea<MdOutlineLocalGroceryStore/></Link></li>
+          <li><Link to="/tienda">visitar tienda en línea <img style={{maxWidth:"3%"}} src="/images/tiendaEnLínea.png" alt="" /></Link></li>
         </ul>
       </div> : null}
     </header>
