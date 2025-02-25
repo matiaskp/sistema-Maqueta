@@ -14,12 +14,12 @@ const Navbar = () => {
         <h1 style={{marginRight:"2rem"}}><Link to="/">Exito Repuestos Línea Argentina ®️</Link></h1>
     </nav>
     {hamburState?<div style={{display:"none"}}></div>:<ul className='linkList'>
-            <li><Link to="/">Inicio 🏠</Link></li>
-            <li><Link to="/tareas">Tareas 📚</Link></li>
-            <li><Link to="/registroGastos">Gastos 💲</Link></li>
-            <li><Link to="/graficos">Gráficas 📈</Link></li>
-            <li><Link to="/añadir">Productos 🛒</Link></li>
-            <li><Link to="/pedidos">Pedidos 📦</Link></li>
+            <Link to="/"><li>Inicio 🏠</li></Link>
+            <Link to="/tareas"><li>Tareas 📚</li></Link>
+            <Link to="/registroGastos"><li>Gastos 💲</li></Link>
+            <Link to="/graficos"><li>Gráficas 📈</li></Link>
+            <Link to="/añadir"><li>Productos 🛒</li></Link>
+            <Link to="/pedidos"><li>Pedidos 📦</li></Link>
         </ul>}
     </>
   )

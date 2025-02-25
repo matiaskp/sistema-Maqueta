@@ -8,44 +8,10 @@ const CustomersOrders = () => {
   const [data, setData] = useState([]);
   const [customerInfo, setCustomerInfo] = useState([]);
   const [orders, setOrders] = useState([]);
-  
-  const columns = [
-    { field: 'id', headerName: 'ID', width: 90 },
-    {
-      field: 'name',
-      headerName: 'Nombre',
-      width: 150,
-      editable: false,
-    },
-    {
-      field: 'email',
-      headerName: 'Email',
-      width: 200,
-      editable: false,
-    },
-    {
-      field: 'phone',
-      headerName: 'Teléfono',
-      width: 150,
-      editable: false,
-    },
-    {
-      field: 'cantidad',
-      headerName: 'Cantidad total',
-      width: 150,
-      editable: false,
-    },
-    {
-      field: 'producto',
-      headerName: 'Producto',
-      width: 200,
-      editable: false,
-    },
-  ];
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/customerOrders")
+      .get("http://localhost:5001/customerOrders")
       .then((response) => {
         console.log("Datos recibidos de la API:", response.data);
   
@@ -60,35 +26,35 @@ const CustomersOrders = () => {
       })
       .catch((err) => console.error("Error al obtener los datos:", err));
   }, []);
-  
-  // Combinar información del cliente con los pedidos
-  const rows = orders.map((order, index) => ({
-    id: index + 1, // Generar un ID único basado en el índice
-    name: customerInfo[index]?.name, // Acceder al primer cliente
-    email: customerInfo[index]?.mail, // Acceder al correo del primer cliente
-    phone: customerInfo[index]?.phone, // Acceder al teléfono del primer cliente
-    cantidad: order.cantidad,
-    producto: order.producto || `Producto ${order.id}`, // Asumiendo que 'producto' es un campo en 'order'
-  }));
 
   return (
     <>
       <Navbar />
-      <Box sx={{ height: 400, width: '100%' }}>
-        <DataGrid
-          rows={rows}
-          columns={columns}
-          initialState={{
-            pagination: {
-              paginationModel: {
-                pageSize: 5,
-              },
-            },
-          }}
-          pageSizeOptions={[5]}
-          checkboxSelection
-          disableRowSelectionOnClick
-        />
+      <Box sx={{ padding: 2 }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+          <thead>
+            <tr>
+              <th style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'left' }}>ID</th>
+              <th style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'left' }}>Nombre y Apellido</th>
+              <th style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'left' }}>Mail</th>
+              <th style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'left' }}>Teléfono</th>
+              <th style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'left' }}>Fecha</th>
+              <th style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'left' }}>Pedidos</th>
+            </tr>
+          </thead>
+          <tbody>
+           {customerInfo.map((item,index)=>(
+            <tr key={index}>
+            <td style={{ padding: '8px', border: '1px solid #ddd' }}>{index}</td>
+            <td style={{ padding: '8px', border: '1px solid #ddd' }}>{item.name} {item.lastName}</td>
+            <td style={{ padding: '8px', border: '1px solid #ddd' }}>{item.mail}</td>
+            <td style={{ padding: '8px', border: '1px solid #ddd' }}>{item.phone}</td>
+            <td style={{ padding: '8px', border: '1px solid #ddd' }}>fecha</td>
+            <td style={{ padding: '8px', border: '1px solid #ddd' }}><button>ver pedidos</button></td>
+          </tr>
+           ))}
+          </tbody>
+        </table>
       </Box>
     </>
   );
