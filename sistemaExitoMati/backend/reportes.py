@@ -9,13 +9,13 @@ import os
 
 
 
-con = fdb.connect(dsn='localhost:c:/recoder/icp/icp.fdb',user="sysdba",password="samurai",
-fb_library_name="c:/recoder/fbclient64.dll")
+con = fdb.connect(dsn='localhost:c:/icp/icp.fdb',user="",password="",
+fb_library_name="c:/fbclient64.dll")
 print(con.version)
 
 # Definir la aplicación Dash
 app = dash.Dash(__name__)
-correct1 = os.getenv('APP_PASSWORD', 'vaneexito')  
+correct1 = os.getenv('APP_PASSWORD', '')  
 # Definir el layout de la aplicación
 app.layout = html.Div(id='main-container', children=[
     # Sección de login

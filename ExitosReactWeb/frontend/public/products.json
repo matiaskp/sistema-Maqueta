@@ -54,5 +54,29 @@
     "quant": 0,
     "desc": "para Ford",
     "price": "120000"
+  },
+  {
+    "id": 8,
+    "src": "rulemanDelanteroTraffic.png",
+    "alt": "ruleman delantero",
+    "quant": 0,
+    "desc": "ruleman delantero para Traffic",
+    "price": "355000"
+  },
+  {
+    "id": 9,
+    "src": "slot.png",
+    "alt": "prueba 4",
+    "quant": 0,
+    "desc": "hola probando",
+    "price": "80000"
+  },
+  {
+    "id": 10,
+    "src": "pereira.png",
+    "alt": "triceta",
+    "quant": 0,
+    "desc": "para renault",
+    "price": "50000"
   }
 ]
